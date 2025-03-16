@@ -22,8 +22,8 @@ std::vector<std::string> read_file(std::string &filename) {
 }
 
 int main() {
-    std::string a = "testc.c";
-    std::string b = "testcpp.cpp";
+    std::string a = "tests/testc.c";
+    std::string b = "tests/testcpp.cpp";
     std::vector<std::string> file_a = read_file(a);
     std::vector<std::string> file_b = read_file(b);
 
