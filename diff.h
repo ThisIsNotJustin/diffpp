@@ -1,10 +1,13 @@
+#ifndef DIFF_H
+#define DIFF_H
+
 #include <vector>
 #include <iostream>
 #include <cassert>
 #include <optional>
 #include "lcs.h"
 
-void print_diff(std::vector<std::string>& file_a, std::vector<std::string>& file_b) {
+void print_diff(std::vector<std::string> &file_a, std::vector<std::string> &file_b) {
     auto dp = lcs_table(file_a, file_b);
     auto lcs = lcs_elements(dp, file_a, file_b);
     int line_a = 0;
@@ -37,3 +40,5 @@ void print_diff(std::vector<std::string>& file_a, std::vector<std::string>& file
         line_b++;
     }
 }
+
+#endif // DIFF_H
