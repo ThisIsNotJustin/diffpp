@@ -6,7 +6,7 @@ typedef struct {
 int test1() {
     printf("Hello World!\n");
     Something s = {
-        .x = 2,
+        .x = 4,
         .y = 2
     };
 

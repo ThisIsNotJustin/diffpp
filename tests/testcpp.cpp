@@ -1,6 +1,6 @@
 #include <iostream>
 
-int test2() {
+int test1() {
     std::cout << "Hello World!" << std::endl;
 
     return 0;
